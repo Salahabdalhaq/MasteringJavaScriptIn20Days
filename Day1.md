@@ -27,4 +27,12 @@ document.getElementsByClassName("className").length;
 // To retrieve the text content of an element with a specific ID:
 document.getElementById("id").textContent;
 // This will print the content of that element.
+// To edit or change the page title, you can use:
+document.title = "the title I want";
+
+// To change the text content using an element's ID, you should correct the function name:
+document.getElementById("id").textContent = "the new content";
+
+// To append new text to the end of the old text, you can use:
+document.getElementById("id").append("new text");
 
