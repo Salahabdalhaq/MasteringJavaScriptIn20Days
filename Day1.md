@@ -31,8 +31,55 @@ document.getElementById("id").textContent;
 document.title = "the title I want";
 
 // To change the text content using an element's ID, you should correct the function name:
-document.getElementById("id").textContent = "the new content";
+document.getElementById("id").textContent = "the new content
 
 // To append new text to the end of the old text, you can use:
 document.getElementById("id").append("new text");
+
+
+
+______________________________________
+
+Compound Assignment With Augmented Multiplication 
+
+the solution
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+__________________________________________
+
+Concatenating Strings with the Plus Equals Operator
+
+the solution
+
+
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+
+_____________________________________________
+
+Use Bracket Notation to Find the Nth-to-Last Character in a String
+
+the solution
+
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+
+__________________________________________________________
+
+
+
+
+
+
+
 
