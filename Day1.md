@@ -21,3 +21,10 @@ document.querySelectorAll("h1");
 document.getElementsByClassName("className"); // or (" .className")
 // This returns all elements with that class name.
 
+// If we need to get the number of elements with a specific class "className":
+document.getElementsByClassName("className").length;
+
+// To retrieve the text content of an element with a specific ID:
+document.getElementById("id").textContent;
+// This will print the content of that element.
+
