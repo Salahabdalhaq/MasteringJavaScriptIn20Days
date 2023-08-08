@@ -65,11 +65,11 @@ link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structu
 let myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
 ```
-_____________________________________________
 
+# 3 :
 # Use Bracket Notation to Find the Nth-to-Last Character in a String
+link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string
 
-the solution
 
 ```js
 // Setup
@@ -78,7 +78,7 @@ const lastName = "Lovelace";
 // Only change code below this line
 const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
 ```
-__________________________________________________________
+
 
 
 
