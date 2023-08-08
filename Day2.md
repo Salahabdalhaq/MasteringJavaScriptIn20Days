@@ -35,4 +35,4 @@ Remember, in JavaScript:
 - String indices start at 0.
 - `typeof null` returns "object," but null is a primitive.
 
-I hope this format better suits your needs!
+#Operators 
