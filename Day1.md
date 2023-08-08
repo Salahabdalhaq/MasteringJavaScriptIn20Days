@@ -1,9 +1,10 @@
 # JavaScript is a language used to modify websites and make them interactive.
 # We write JavaScript in the console.
-```js An example of how to print something using the console is by writing the JavaScript code: console.log("we write here")```
-_________
 
-```js  document.body.children;  // Returns an HTML collection (all elements in the body)
+```js
+ An example of how to print something using the console is by writing the JavaScript code: console.log("we write here")```
+
+  document.body.children;  // Returns an HTML collection (all elements in the body)
 
 // If we need to find an element by ID, we use:
 document.getElementById("id");
