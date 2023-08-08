@@ -53,7 +53,7 @@ b *= 3;
 c *= 10;
 __________________________________________
 
-Concatenating Strings with the Plus Equals Operator
+# Concatenating Strings with the Plus Equals Operator
 
 the solution
 
@@ -63,7 +63,7 @@ myStr += "This is the second sentence.";
 
 _____________________________________________
 
-Use Bracket Notation to Find the Nth-to-Last Character in a String
+# Use Bracket Notation to Find the Nth-to-Last Character in a String
 
 the solution
 
