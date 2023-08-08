@@ -40,7 +40,7 @@ document.getElementById("id").append("new text");
 
 ```
 #1 : 
-Compound Assignment With Augmented Multiplication
+#Compound Assignment With Augmented Multiplication
 link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication
 ```js
 let a = 5;
@@ -53,7 +53,7 @@ b *= 3;
 c *= 10;
 ```
 #2 :
-Concatenating Strings with the Plus Equals Operator
+# Concatenating Strings with the Plus Equals Operator
 link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator
 
 ```js
