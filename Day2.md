@@ -75,4 +75,32 @@ It's recommended to use `===` in most cases because it considers both value and 
 
 # Expressions
 
+**Expressions and Variable Declaration/Assignment:**
 
+**Declaring and Assigning Variables:**
+- To declare and assign a variable, you can use `let` followed by the variable name.
+  - Example: `let remember = "22/3";` assigns the value "22/3" to the variable `remember`.
+
+**Declaring Variables:**
+- To declare a variable without assigning a value, you can use `let` followed by the variable name.
+  - Example: `let myVariable;` declares a variable named `myVariable` with an initial value of `undefined`.
+
+**Assigning Values to Variables:**
+- Assign a value to a variable using the variable name followed by the assignment operator (`=`).
+  - Example: `myVariable = "my name is salah";`
+
+**Using `const` for Constants:**
+- You can use `const` to declare a variable that cannot be reassigned.
+  - Example: `const x = 10;`
+
+**Performing Arithmetic with Variables:**
+- Variables can be used in arithmetic expressions.
+  - Example: If `x` is 10, then `x - 4` will result in 6.
+
+**Variable Naming Rules:**
+- Variable names cannot start with a number.
+- Variable names should follow the camelCase naming convention.
+  - Example: `myVariableName`
+
+**Variables and Values:**
+- Variables do not contain values directly; they point to values in memory.
