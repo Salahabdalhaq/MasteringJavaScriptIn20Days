@@ -37,3 +37,42 @@ Remember, in JavaScript:
 
 
 # Operators 
+Typeof Operator:
+
+typeof is an operator used to determine the data type of a value.
+Arithmetic Operators:
+
+Addition: +
+Subtraction: -
+Multiplication: *
+Division: /
+Comparison Operators:
+
+Greater than: >
+Less than: <
+Greater than or equal to: >=
+Less than or equal to: <=
+Equality Operators:
+
+Strict equality: ===
+Loose equality: ==
+Strict inequality: !==
+Loose inequality: !=
+Examples:
+
+1 === 1 is true.
+1 == 1 is true.
+"1" === "1" is true.
+"1" == "1" is true.
+1 === "1" is false.
+1 == "1" is true.
+It's recommended to use === in most cases because it considers both value and type during comparison.
+
+JavaScript offers a variety of operators for different purposes. Remember that:
+
+typeof is used to check data types.
+Arithmetic operators perform basic mathematical operations.
+Comparison operators evaluate conditions.
+Equality operators compare values with different levels of strictness.
+
+
