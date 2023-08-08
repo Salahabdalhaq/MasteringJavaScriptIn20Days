@@ -1,6 +1,4 @@
-
-Sure, here's the text organized and formatted nicely:
-
+# Values & Data Types
 **Primitive Data Types:**
 1. String
 2. Number
