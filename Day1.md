@@ -1,3 +1,8 @@
+
+
+
+# Day 1: JavaScript Introduction and DOM 
+
 # JavaScript is a language used to modify websites and make them interactive.
 # We write JavaScript in the console of Browser.
 
