@@ -3,7 +3,7 @@ We write JavaScript in the console.
 An example of how to print something using the console is by writing the JavaScript code: console.log("we write here")
 _________
 
-document.body.children; // Returns an HTML collection (all elements in the body)
+```js  document.body.children;  // Returns an HTML collection (all elements in the body)
 
 // If we need to find an element by ID, we use:
 document.getElementById("id");
@@ -37,7 +37,7 @@ document.getElementById("id").textContent = "the new content
 document.getElementById("id").append("new text");
 
 
-
+```
 ______________________________________
 
 # Compound Assignment With Augmented Multiplication 
