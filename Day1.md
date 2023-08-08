@@ -39,11 +39,9 @@ document.getElementById("id").append("new text");
 
 
 ```
-______________________________________
-
-# Compound Assignment With Augmented Multiplication 
-
-the solution
+#1 : 
+Compound Assignment With Augmented Multiplication
+link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication
 ```js
 let a = 5;
 let b = 12;
@@ -54,11 +52,9 @@ a *= 5;
 b *= 3;
 c *= 10;
 ```
-__________________________________________
-
-# Concatenating Strings with the Plus Equals Operator
-
-the solution
+#2 :
+Concatenating Strings with the Plus Equals Operator
+link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator
 
 ```js
 let myStr = "This is the first sentence. ";
