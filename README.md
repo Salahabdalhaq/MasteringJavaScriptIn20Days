@@ -40,3 +40,4 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 -  [**Day 2**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day2.md)
 -  [**Day 3**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day3.md)
 -  [**Day 4**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day4.md)
+-  [**Day 5**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day5.md)
