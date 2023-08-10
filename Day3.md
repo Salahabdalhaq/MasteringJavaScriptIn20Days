@@ -98,12 +98,36 @@
    };
    ```
 
+# 1 :
+# Copy Array Items Using Slice
+link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice
 
-   ```js
+
    function forecast(arr) {
   // Only change code below this line
   return arr.slice(2,4);
 }
 // Only change code above this line
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
-  ```
+
+
+
+# 2 :
+# Combine Arrays with the Spread Operator
+link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator
+
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = [ 'learning',...fragment , 'is','fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());
+
+
+# 3 :
+# Profile Lookup
+link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup
+
+
+
