@@ -99,3 +99,32 @@ JavaScript supports various types of events. Some common event types include:
 - `"mouseover"`: Fired when the cursor enters an element.
 - `"mouseout"`: Fired when the cursor exits an element.
 
+
+
+**1. Use Multiple Conditional (Ternary) Operators:**
+Challenge Link: [Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
+```javascript
+function checkSign(num) {
+return(num>0) ? "positive"
+: (num<0) ? "negative"
+:"zero"
+}
+
+checkSign(10);
+```
+
+**2.Use the map Method to Extract Data from an Array:**
+Challenge Link: [Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
+
+```javascript
+
+// Only change code below this line
+const ratings = watchList.map(movie => {
+  return { title: movie["Title"], rating: movie["imdbRating"] };
+});
+// Only change code above this line
+
+console.log(JSON.stringify(ratings));
+```
+
+
