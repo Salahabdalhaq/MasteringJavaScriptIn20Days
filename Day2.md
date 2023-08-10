@@ -210,9 +210,9 @@ What is the value of result? **_You MUST explain the steps of evaluation taken b
 # solv:
 
 
-1- num > 10 its  true because js convert the string to a number
-2- isPositive is already true
-3- (num > 10 && isPositive) its true
-4- num < 0 its false
-5- (num > 10 && isPositive) || num < 0 its  true
-6- value of result will be true 
+1- num > 10 its  true because js convert the string to a number .
+2- isPositive is already true.
+3- (num > 10 && isPositive) its true.
+4- num < 0 its false.
+5- (num > 10 && isPositive) || num < 0 its  true.
+6- value of result will be true .
