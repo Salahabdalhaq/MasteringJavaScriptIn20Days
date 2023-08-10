@@ -124,7 +124,95 @@ It's recommended to use `===` in most cases because it considers both value and 
 - Example: `if` statements, `for` loops, variable assignments are statements.
 
 
+### QUESTION #1
+
+Consider the following JavaScript code:
+
+```javascript
+let a = 0;
+let b = "0";
+let c = false;
+let d = "false";
+
+console.log(a == b);
+console.log(b === c);
+console.log(!!d);
+```
+
+What will be the output of each console.log statement? **_You MUST explain WHY_**.
+# solv:
+console.log(a == b); // the output  is True because (==) its comparing by value not type 
+console.log(b === c); // the output is False because (===) its comparing by data type  string and  boolean
+console.log(!!d);     // the output is True because (!!) its converte d  to true 
+
+
+### QUESTION #2:
+
+
+Consider the following JavaScript expression:
+
+```javascript
+console.log(4 + 5 * "7");
+```
+
+What will be the output of this expression? **_You MUST explain the steps of evaluation taken by JS_**.
+# solv:
+
+1- The js do (5 * "7") by converte the string to number type it will be 35 
+2- the js do (4+ 35) it will be 39 
+
+### QUESTION #3:
+
+Evaluate the following expression:
+
+```javascript
+let result = 5 + 2 * 3 - 1;
+```
+
+What will be the output of this expression? **_You MUST explain the steps of evaluation taken by JS_**.
+# solv:
+
+1- the js do  (2 * 3) it will be  6
+2- the js do  (5 + 6)it will be  11
+3- the js do  (11 - 1) it will be  10
+So, the final value of the expression 5 + 2 * 3 - 1 is 10
 
 
 
+### QUESTION #4:
 
+Consider the following code:
+
+```javascript
+let x = 10;
+let y = '10';
+console.log(x == y);
+console.log(x === y);
+```
+What will be the output of each `console.log` statement? **_You MUST explain WHY_**.
+# solv:
+console.log(x == y); // the output is true because (==) compare  value 
+console.log(x === y); // the output  is falus because they have different types
+
+
+### QUESTION #5:
+
+Given the code below:
+
+```javascript
+let num = "15";
+let isPositive = true;
+let result = (num > 10 && isPositive) || num < 0;
+console.log(result);
+```
+
+What is the value of result? **_You MUST explain the steps of evaluation taken by JS_**
+# solv:
+
+
+1- num > 10 its  true because js convert the string to a number
+2- isPositive is already true
+3- (num > 10 && isPositive) its true
+4- num < 0 its false
+5- (num > 10 && isPositive) || num < 0 its  true
+6- value of result will be true 
