@@ -101,51 +101,86 @@ JavaScript supports various types of events. Some common event types include:
 
 
 
-**1. Use Multiple Conditional (Ternary) Operators:**
-Challenge Link: [Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
+**1. Global Scope and Functions:**
+Challenge Link: [Global Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
 ```javascript
-function checkSign(num) {
-return(num>0) ? "positive"
-: (num<0) ? "negative"
-:"zero"
+// Declare the myGlobal variable below this line
+
+const myGlobal =10;
+
+function fun1() {
+  oopsGlobal=5;
+  // Assign 5 to oopsGlobal here
+
 }
 
-checkSign(10);
-```
-
-**2.Use the map Method to Extract Data from an Array:**
-Challenge Link: [Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
-
-```javascript
-
-// Only change code below this line
-const ratings = watchList.map(movie => {
-  return { title: movie["Title"], rating: movie["imdbRating"] };
-});
 // Only change code above this line
 
-console.log(JSON.stringify(ratings));
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
 ```
 
-**3.Use the filter Method to Extract Data from an Array:**
-Challenge Link: [Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
+**2.Local Scope and Functionsy:**
+Challenge Link: [Local Scope and Functions(https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions)
 
 ```javascript
-// Only change code below this line
+function myLocalScope() {
+  // Only change code below this line
+let myVar;
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
 
-const filteredList = watchList
-  .filter(movie => +(movie.imdbRating) >= 8.0)
-  .map(movie => ({ title: movie.Title, rating: (movie.imdbRating) }));
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
 
-// Only change code above this line
-
-// note : we can use "+" or "parseFloat" to convert string into numbers :DD
 ```
 
-**4.Golf Code:**
-Challenge Link: [Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
+**3.Global vs. Local Scope in Functions:**
+Challenge Link: [Global vs. Local Scope in Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions)
 
 ```javascript
+// Setup
+const outerWear = "T-Shirt";
 
+function myOutfit() {
+  // Only change code below this line
+  const myOutfit="sweater";
+  return myOutfit;
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+```
+
+**4.Stand in Line:**
+Challenge Link: [Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line )
+
+```javascript
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  item=arr.shift();
+  return item;
+  // Only change code above this line
+}
+
+// Setup
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 ```
 
