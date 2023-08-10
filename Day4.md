@@ -127,4 +127,16 @@ const ratings = watchList.map(movie => {
 console.log(JSON.stringify(ratings));
 ```
 
+**3.Use the filter Method to Extract Data from an Array:**
+Challenge Link: [Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
+
+```javascript
+// Only change code below this line
+
+const filteredList = watchList
+  .filter(movie => +(movie.imdbRating) >= 8.0)
+  .map(movie => ({ title: movie.Title, rating: (movie.imdbRating) }));
+
+// Only change code above this line
+```
 
