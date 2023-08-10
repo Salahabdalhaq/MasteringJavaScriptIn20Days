@@ -142,3 +142,10 @@ const filteredList = watchList
 // note : we can use "+" or "parseFloat" to convert string into numbers :DD
 ```
 
+**4.Golf Code:**
+Challenge Link: [Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
+
+```javascript
+
+```
+
