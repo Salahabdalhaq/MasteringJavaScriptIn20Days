@@ -104,3 +104,27 @@ It's recommended to use `===` in most cases because it considers both value and 
 
 **Variables and Values:**
 - Variables do not contain values directly; they point to values in memory.
+
+**Copying Values Between Variables:**
+- When you assign one variable's value to another variable, they both refer to the same value in memory.
+  - Example: `let y = x;` makes `y` refer to the same value as `x` ("hi ").
+
+**Reassigning Variables:**
+- Changing the value of one variable does not affect the value of another variable.
+  - Example: `x = "salah";` changes the value of `x` to "salah".
+
+**Expressions and Statements:**
+
+**Expressions:**
+- Expressions are code snippets that return a value.
+- Example: `3 + 5` is an expression that evaluates to `8`.
+
+**Statements:**
+- Statements perform actions and do not return a value directly.
+- Example: `if` statements, `for` loops, variable assignments are statements.
+
+
+
+
+
+
