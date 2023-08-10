@@ -98,43 +98,38 @@
    };
    ```
 
-# 1 :
-# Copy Array Items Using Slice
-link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice
 
+**1. Copy Array Items Using Slice:**
+Challenge Link: [Copy Array Items Using Slice](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice)
 
-   function forecast(arr) {
-  // Only change code below this line
-  return arr.slice(2,4);
+```javascript
+function forecast(arr) {
+  return arr.slice(2, 4);
 }
-// Only change code above this line
+
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+```
 
+**2. Combine Arrays with the Spread Operator:**
+Challenge Link: [Combine Arrays with the Spread Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
 
-
-# 2 :
-# Combine Arrays with the Spread Operator
-link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator
-
+```javascript
 function spreadOut() {
   let fragment = ['to', 'code'];
-  let sentence = [ 'learning',...fragment , 'is','fun']; // Change this line
+  let sentence = ['learning', ...fragment, 'is', 'fun'];
   return sentence;
 }
 
 console.log(spreadOut());
+```
 
+**3. Profile Lookup:**
+Challenge Link: [Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
 
-# 3 :
-# Profile Lookup
-link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup
-
-
+```javascript
 function lookUpProfile(name, prop) {
-  // Only change code below this line
-
   for (let i = 0; i < contacts.length; i++) {
-    if (name === contacts[i].firstName ) {
+    if (name === contacts[i].firstName) {
       if (contacts[i][prop]) {
         return contacts[i][prop];
       } else {
@@ -143,56 +138,50 @@ function lookUpProfile(name, prop) {
     }
   }
   return "No such contact";
-
-  // Only change code above this line
 }
 
 lookUpProfile("Akira", "likes");
+```
 
-# 4 :
-# Write Reusable JavaScript with Functions
-link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions
+**4. Write Reusable JavaScript with Functions:**
+Challenge Link: [Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
 
-function reusableFunction(){
- console.log("Hi World");
+```javascript
+function reusableFunction() {
+  console.log("Hi World");
 }
 
 reusableFunction();
+```
 
+**5. Understanding Undefined Value returned from a Function:**
+Challenge Link: [Understanding Undefined Value returned from a Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function)
 
-# 5 :
-# Understanding Undefined Value returned from a Function
-link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function
-
-// Setup
+```javascript
 let sum = 0;
 
 function addThree() {
   sum = sum + 3;
 }
 
-// Only change code below this line
-function addFive(){
-  sum +=5 ;
+function addFive() {
+  sum += 5;
 }
-// Only change code above this line
 
 addThree();
 addFive();
+```
 
+**6. Return a Value from a Function with Return:**
+Challenge Link: [Return a Value from a Function with Return](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return)
 
-
-# 6 :
-# Return a Value from a Function with Return
-link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return
-
-function timesFive(arg){
-
-arg*=5 ;
-
-return arg;
-
+```javascript
+function timesFive(arg) {
+  arg *= 5;
+  return arg;
 }
+```
+
 
 
 
