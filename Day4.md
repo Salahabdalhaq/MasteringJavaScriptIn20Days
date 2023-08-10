@@ -73,3 +73,29 @@ function fun() {
 fun(); // Output: "insideFun ahmad"
 console.log("outFun", name); // Output: "outFun salah"
 ```
+
+**Event Listeners:**
+
+You can use event listeners in JavaScript to "listen" for events that occur on the DOM (Document Object Model). When the specified event occurs.
+
+```javascript
+document.addEventListener("click", () => {
+  console.log("clicked");
+});
+```
+
+- `document.addEventListener()` attaches an event listener to the document.
+- `"click"` is the event type, and the provided function is the event handler.
+
+**Event Object:**
+
+When an event occurs, JavaScript automatically passes an event object to the event handler function. This object contains information about the event and allows you to access details such as the event type, target element, and more.
+
+**Types of Events:**
+
+JavaScript supports various types of events. Some common event types include:
+- `"click"`: Fired when an element is clicked.
+- `"dblclick"`: Fired when an element is double-clicked.
+- `"mouseover"`: Fired when the cursor enters an element.
+- `"mouseout"`: Fired when the cursor exits an element.
+
