@@ -35,4 +35,66 @@
    array1[1] = 4;
    // Now array1 is [1, 4, 3]
    // array2 is also [1, 4, 3] because they reference the same array in memory.
+
+
+41. **Objects in JavaScript**:
+
+   Example:
+   ```javascript
+   const js = {
+     name: "salah",
+     isAvailable: true,
+     birthYear: 1998
+   };
    ```
+
+5. **Accessing Object Properties**:
+   You can access object properties using dot notation or square brackets.
+
+   Example:
+   ```javascript
+   js.name; // "salah"
+   js["isAvailable"]; // true
+   ```
+
+6. **Calculations and Modifications**:
+   You can perform calculations using object properties,
+   Example:
+   ```javascript
+   let age = 2023 - js.birthYear;
+   js.name = "salahAbdalhaq";
+   js.salary = "1000$"; // Adding a new property
+   ```
+
+7. **Functions in Objects**:
+   You can define functions as properties within objects. These are often referred to as methods.
+
+   Example:
+   ```javascript
+   const dog = {
+     name: "doo",
+     speak: function() {
+       console.log("woof woof", this.name);
+     }
+   };
+
+   dog.speak(); // Output: "woof woof doo"
+   ```
+
+8. **Using `this` Keyword**:
+   The `this` keyword refers to the current object and allows you to access its properties from within methods.
+
+9. **Nested Objects**:
+   Objects can contain other objects as their properties, creating a hierarchical structure.
+
+   Example:
+   ```javascript
+   const person = {
+     name: "John",
+     address: {
+       street: "123 Main St",
+       city: "Some City"
+     }
+   };
+   ```
+
