@@ -130,4 +130,73 @@ console.log(spreadOut());
 link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup
 
 
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+
+  for (let i = 0; i < contacts.length; i++) {
+    if (name === contacts[i].firstName ) {
+      if (contacts[i][prop]) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+
+  // Only change code above this line
+}
+
+lookUpProfile("Akira", "likes");
+
+# 4 :
+# Write Reusable JavaScript with Functions
+link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions
+
+function reusableFunction(){
+ console.log("Hi World");
+}
+
+reusableFunction();
+
+
+# 5 :
+# Understanding Undefined Value returned from a Function
+link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function
+
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum +=5 ;
+}
+// Only change code above this line
+
+addThree();
+addFive();
+
+
+
+# 6 :
+# Return a Value from a Function with Return
+link :https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return
+
+function timesFive(arg){
+
+arg*=5 ;
+
+return arg;
+
+}
+
+
+
+
+
+
 
