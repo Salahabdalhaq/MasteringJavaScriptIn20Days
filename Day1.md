@@ -44,43 +44,35 @@ document.getElementById("id").append("new text");
 
 
 ```
-# 1 : 
-# Compound Assignment With Augmented Multiplication
-link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication
-```js
+
+**1. Compound Assignment With Augmented Multiplication:**
+Challenge Link: [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
+
+```javascript
 let a = 5;
 let b = 12;
 let c = 4.6;
 
-// Only change code below this line
 a *= 5;
 b *= 3;
 c *= 10;
 ```
-# 2 :
-# Concatenating Strings with the Plus Equals Operator
-link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator
 
-```js
+**2. Concatenating Strings with the Plus Equals Operator:**
+Challenge Link: [Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
+
+```javascript
 let myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
 ```
 
-# 3 :
-# Use Bracket Notation to Find the Nth-to-Last Character in a String
-link : https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string
+**3. Use Bracket Notation to Find the Nth-to-Last Character in a String:**
+Challenge Link: [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
 
-
-```js
-// Setup
+```javascript
 const lastName = "Lovelace";
-
-// Only change code below this line
-const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
 ```
-
-
-
 
 
 
