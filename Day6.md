@@ -53,3 +53,56 @@ let [one, two, three] = "hi salah abdalhaq".split(" ");
 // one will be "hi", two will be "salah", and three will be "abdalhaq"
 ```
 
+**Async Functions:**
+
+- You can't use `await` in regular functions; it's allowed only in `async` functions.
+
+- `async` functions are special functions that allow the use of `await`.
+
+```javascript
+async function fetchData() {
+  let response = await fetch("https://api.example.com/data");
+  let data = await response.json();
+  return data;
+}
+```
+
+**Modules:**
+
+- Modules help split large codebases across multiple files.
+
+- To import and export functions or variables between modules:
+
+Module: `model.js`
+```javascript
+export function fun() {
+  // function code
+}
+```
+
+Module: `main.js`
+```javascript
+import { fun } from './model.js';
+```
+
+**Debugging:**
+
+- Use `console.log()`, `.warn()`, and `.error()` to understand what's happening when your program runs.
+
+- Browser debuggers provide tools to inspect and debug your code, set breakpoints, and step through execution.
+
+- Use the `debugger;` statement to create a breakpoint in your code, which pauses execution for debugging.
+
+**Error Handling:**
+
+- Use `try {} catch (error) {}` to manage errors when they occur.
+
+```javascript
+try {
+  // Code that may throw an error
+} catch (error) {
+  // Code to handle the error
+}
+```
+
+- Error handling helps prevent unexpected crashes and provides better user experience.
