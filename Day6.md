@@ -106,3 +106,12 @@ try {
 ```
 
 - Error handling helps prevent unexpected crashes and provides better user experience.
+![oic](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/assets/120148077/b341163d-1a19-49b0-a4a3-d05a07a759bc)
+
+![css](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/assets/120148077/db98cf70-7958-4fc5-89a0-ae3107fd820c)
+
+![html](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/assets/120148077/ecc987ed-798b-40bf-b642-0391c87bf7aa)
+
+![js](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/assets/120148077/d447fdff-911e-4e12-906b-019f2e057d39)
+
+
