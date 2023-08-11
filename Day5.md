@@ -90,6 +90,33 @@ The spread operator `...` can be used to concatenate arrays into a new array:
 const cArray = [...aArray, ...bArray];
 ```
 
+**While Loops:**
+
+- A `while` loop repeatedly executes a block of code as long as the specified condition is true.
+
+```javascript
+let fiveRandomNumbers = [];
+while (fiveRandomNumbers.length < 5) {
+  fiveRandomNumbers.push(Math.random());
+}
+```
+
+- In this example, the loop will generate and add random numbers to the array until it contains 5 numbers.
+
+**Asynchronous Behavior and `setTimeout`:**
+
+- JavaScript executes code in a single thread, so it can only do one thing at a time.
+
+- The `setTimeout` function allows you to delay the execution of a function.
+
+```javascript
+setTimeout(() => console.log("text"), 1000);
+```
+
+- In this example, the message "text" will be logged after a delay of 1000 milliseconds (1 second).
+
+- This demonstrates the asynchronous behavior of JavaScript. The code doesn't wait for `setTimeout` to finish; it continues executing other tasks and then executes the callback when the time is up.
+
 **1. Use Multiple Conditional (Ternary) Operators:**
 Challenge Link: [Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
 ```javascript
