@@ -29,3 +29,18 @@
 
 Pair programming is a development technique where two programmers work together at one computer. They switch between the "driver," who writes code, and the "navigator," who reviews and guides the process.
 
+**1.Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem:**
+Challenge Link: [Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
+
+```javascript
+const squareList = arr => {
+  // Only change code below this line
+  return arr.filter(num => Number.isInteger(num) && num > 0).map(num => num * num);
+
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
+
+```
