@@ -36,9 +36,12 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 - Celebrate your achievements and reflect on your growth throughout the challenge.
 
 ## Folder Structure
+- **WEEK 1:**
 -  [**Day 1**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day1.md)
 -  [**Day 2**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day2.md)
 -  [**Day 3**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day3.md)
 -  [**Day 4**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day4.md)
 -  [**Day 5**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day5.md)
 -  [**Day 6**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day6.md)
+- **WEEK 2:**
+-  [**Day 7**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day7.md)
