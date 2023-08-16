@@ -78,7 +78,7 @@ function sumRange(from, to) {
   if (start > end) {
     return 0;
   }
-  return from + sumRange(from + 1, to;
+  return from + sumRange(from + 1, to);
 }
 
 ```
