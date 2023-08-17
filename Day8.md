@@ -117,7 +117,7 @@ Write a closure named `compose` that takes multiple functions as arguments and r
 
 
 ```javascript
-unction compose(...funcs) {
+function compose(...funcs) {
 ....
 ```
 
