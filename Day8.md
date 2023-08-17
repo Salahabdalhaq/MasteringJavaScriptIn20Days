@@ -62,22 +62,63 @@ myNewFunction(); // Output: 1
 **Question 1:**
 Write a closure named `createCounter` that takes an initial value `start` and returns a function. The returned function, when invoked, should increment the counter by 1 and return the updated value.
 
+```javascript
+function createCounter(start) {
+  let counter = start;
+  
+  function incrementCounter() {
+    counter++;
+  }
+  
+  return incrementCounter();
+}
+
+const myNewFunction = createCounter();
+myNewFunction(1); //2
+
+```
 
 
 **Question 2:**
 Write a closure named `calculateAverage` that takes an array of numbers, `nums`, and returns a function. The returned function, when invoked, should calculate and return the average of the numbers in the array.
+```javascript
+function calculateAverage(nums) {
+  let sum = 0;
 
+  function avegSum() {
+    for (let i = 0; i < nums.length; i++) {
+      sum += nums[i];
+    }
+    return sum / nums.length; 
+  }
 
+  return avegSum; 
+}
+const averageCalculator = calculateAverage([2,5, 4, 6, 8, 10]);
 
+averageCalculator(); 
+```
 **Question 3:**
 Write a closure named `powerOf` that takes a base number `base` and returns a function. The returned function, when invoked with an exponent `exp`, should calculate and return the result of `base` raised to the power of `exp`.
 
+```javascript
+function powerOf(base) {
+  return function(exp) {
+    return Math.pow(base, exp);
+  };
+}
+const newPowerOf = powerOf(3);
+newPowerOf() ; // 8
+```
 
 
 **Question 4:**
 Write a closure named `compose` that takes multiple functions as arguments and returns a new function. The returned function should apply the provided functions in reverse order, passing the result of each function as an argument to the next function.
 
-The questions are presented as requested, without any changes.
 
+```javascript
+unction compose(...funcs) {
+....
+```
 
 
