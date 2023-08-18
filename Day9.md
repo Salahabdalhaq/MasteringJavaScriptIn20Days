@@ -48,4 +48,65 @@ console.log("me first");
 - Promises provide an abstraction for handling asynchronous operations.
 - Understanding promise execution rules can help manage asynchronous code more effectively.
 - The non-blocking nature of promises ensures smoother application behavior, even with long-running tasks.
+## Question 1:
+'
+You are given a function executeInSequenceWithCBs and some code. The task is to modify the executeInSequenceWithCBs function so that it runs and executes all the tasks inside the asyncTasks array.
+The function should return an array of messages obtained from each task's execution.
+You are only allowed to change the executeInSequenceWithCBs function or add new functions/code. You cannot modify the tasks' functions.
+# solve
+
+```javascript
+const task1 = (cb) => setTimeout(() => {
+  const message = "Task 1 has executed successfully!";
+  cb(message);
+}, 3000);
+
+const task2 = (cb) => setTimeout(() => {
+  const message = "Task 2 has executed successfully!";
+  cb(message);
+}, 0);
+
+const task3 = (cb) => setTimeout(() => {
+  const message = "Task 3 has executed successfully!";
+  cb(message);
+}, 1000);
+
+const task4 = (cb) => setTimeout(() => {
+  const message = "Task 4 has executed successfully!";
+  cb(message);
+}, 2000);
+
+const task5 = (cb) => setTimeout(() => {
+  const message = "Task 5 has executed successfully!";
+  cb(message);
+}, 4000);
+
+const asyncTasks = [task1, task2, task3, task4, task5];
+
+const executeInSequenceWithCBs = (tasks, callback) => {
+  const results = [];
+  let currentIndex = 0;
+
+  const executeNextTask = () => {
+    if (currentIndex < tasks.length) {
+      tasks[currentIndex]((message) => {
+        results.push(message);
+        currentIndex++;
+        executeNextTask();
+      });
+    } else {
+      callback(results);
+    }
+  };
+
+  executeNextTask();
+};
+
+executeInSequenceWithCBs(asyncTasks, (messages) => {
+  console.log(messages);
+});
+
+```
+
+
   
