@@ -75,3 +75,77 @@ function userCreator(name, score) {
 const user1 = userCreator("salah", 4);
 user1.increment(); // Output: 5
 ```
+
+**Prototypes and Hidden `[[Prototype]]`:**
+
+- Objects created with functions have a hidden `[[Prototype]]` property that links to other objects.
+- Shared properties and methods are accessible through the prototype chain.
+
+**Using Method Inside Function:**
+
+- Methods within a function can access properties via the `this` keyword.
+
+```javascript
+function userCreator(name, score) {
+  const newUser = Object.create(userFunctionStore);
+  newUser.name = name;
+  newUser.score = score;
+  newUser.increment = function() {
+    function add1() {
+      this.score++;
+    }
+    add1();
+  };
+}
+
+const userFunctionStore = {
+  increment: function() {
+    function add1() {
+      this.score++;
+    }
+    add1();
+  }
+};
+const user1 = userCreator("salah", 4);
+user1.increment(); 
+```
+
+**Using the `new` Keyword:**
+
+- The `new` keyword creates an object, returns it, and links it with another object automatically.
+
+```javascript
+function userCreator(name, score) {
+  this.name = name;
+  this.score = score;
+}
+
+userCreator.prototype.increment = function() {
+  this.score++;
+};
+
+const user1 = new userCreator("salah", 4);
+user1.increment();
+```
+
+**Using Classes (Syntactic Sugar):**
+
+- Classes are a more organized and modern way to work with prototypes and constructors.
+
+```javascript
+class userCreator {
+  constructor(name, score) {
+    this.name = name;
+    this.score = score;
+  }
+  increment() {
+    this.score++;
+  }
+  login() {
+    console.log("login");
+  }
+}
+
+const user1 = new userCreator("salah", 4);
+user1.increment();
+```
