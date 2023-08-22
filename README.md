@@ -48,3 +48,8 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 -  [**Day 8**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day8.md)
 -  [**Day 9**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day9.md)
 -  [**Day 10**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day10.md)
+  - **WEEK 3:**
+-  [**Day 11**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day11.md)
+-  [**Day 12**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day12.md)
+-  [**Day 13**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day13.md)
+-  [**Day 14**](https://github.com/Salahabdalhaq/MasteringJavaScriptIn20Days/blob/main/Day14.md)
