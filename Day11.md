@@ -64,3 +64,31 @@ if (!Object.is || true) {
 }
 ```
 
+**Coercion:**
+
+`ToPrimitive(hint)`
+
+- `toString(null)` // "null"
+- `toString(undefined)` // "undefined"
+- `toString(-0)` // "0"
+
+`toNumber("")` // 0
+`toNumber(-0)` // -0
+`toNumber(".")` // NaN
+
+`toBoolean()`
+
+**Falsy:** [0, -0, null, NaN, false, undefined]
+
+**Truthy:** Other values are truthy.
+
+**How to access the `.length` of a string value?**
+
+**Boxing:**
+
+```javascript
+if (studentNameElem.value.length > 50) {
+  console.log("dfds");
+}
+```
+
