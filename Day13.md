@@ -47,3 +47,65 @@ Naming benefits:
 3. Enhanced self-documenting code.
 
 Understanding scope and using meaningful function names contribute to writing clearer and more maintainable code.
+
+**QUESTION #1**
+Create a function called arrowHOF that takes an arrow function as input and returns a new arrow function that enhances the behavior of the input function.
+
+The enhanced function should accept additional arguments and execute the input function multiple times based on these arguments.
+```javascript
+const exampleNormalFunc1 = (a, b, c) => {
+  return a * (b + c);
+}
+
+const exampleNormalFunc2 = (x, y) => {
+  return x * y;
+}
+
+const exampleNormalFunc3 = (string) => {
+  return string + " " + string + " " + string + "!";
+}
+
+
+const arrowHOF = (normalFunc) => {
+  return (...argsOuter) => {
+    return (...argsInner) => {
+      const resultOuter = normalFunc(...argsOuter);
+      const resultInner = normalFunc(...argsInner);
+      return () => {
+        for (let i = 0; i < resultInner; i++) {
+          console.log(resultOuter);
+        }
+    };};};};
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs 60 twice
+console.log(hofNormalFunc2(20, 35))(4); // logs 700 four times
+console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
+```
+
+
+**QUESTION #2**
+Build a function called preserveThis that takes a function as input and returns a new arrow function that behaves the same way as the input function but preserves the original this context when used as a method of an object.
+
+// Example object
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+const preserveThis = (func) => {
+  return function (...args) {
+    return func(...args);
+  };
+};
+
+// Wrap the greet function using preserveThis
+const preservedGreet = preserveThis(obj.greet);
+
+// Call the wrapped function as a method of the object
+preservedGreet('Hello'); // Output: "Hello, John!"
