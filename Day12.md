@@ -120,6 +120,78 @@ The correct choice is D) 1, ReferenceError
 a is declared using var making it accessible within the whole testScope1 function
 b is declared using let making it accessible only within the if block.   result ReferenceError because b is not defined in that scope.
  
+
+
+**QUESTION #3:**
+What will be the output of the following code snippet? Pick the right choice then justify your answer with an explanation.
+```javascript
+function testScope2() {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+}
+
+testScope2();
+```
+Choices:
+
+A) undefined, ReferenceError
+B) 1, undefined, ReferenceError
+C)undefined, undefined, ReferenceError
+D) 1, ReferenceError
+
+**Explanation:**
+The correct choice is A) undefined, ReferenceError
+
+var declarations are hoisted to the top with an initial value of undefined.
+let and const declarations are not hoisted, and they are not accessible before the point they are declared.
+
+**QUESTION #4:**
+What will be the output of the following code snippet? Pick the right choice then justify your answer with an explanation.
+
+```javascript
+function testScope3() {
+  var a = 36;
+  let b = 100;
+  const c = 45;
+
+  console.log([a, b, c]);
+
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+
+    console.log([a, b, c]);
+  }
+
+  console.log([a, b, c]);
+}
+
+testScope3();
 ```
 
+**Choices:**
+
+A) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 36, 2, 3 ]
+
+B) [ 36, 100, 45 ] | [1, 2, 3 ] | [ 36, 100, 45 ]
+
+C) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 1,100, 45 ]
+
+D) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 1, 2, 3 ]
+
+**Explanation:**
+
+The correct choice isC) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 1, 100, 45 ]
+
+First, the code run the initial values of a, b, and c: [36, 100, 45].
+Inside the if block, new values for a, b, and c are assigned: [1, 2, 3].
+Outside the if block, the value of a changes to 1, but b and c retain their outer values.
+The code logs the values of a, b, and c again: [1, 100, 45].
 
