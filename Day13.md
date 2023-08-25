@@ -89,7 +89,7 @@ console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
 
 **QUESTION #2**
 Build a function called preserveThis that takes a function as input and returns a new arrow function that behaves the same way as the input function but preserves the original this context when used as a method of an object.
-
+```javascript
 // Example object
 const obj = {
   name: 'John',
@@ -109,3 +109,46 @@ const preservedGreet = preserveThis(obj.greet);
 
 // Call the wrapped function as a method of the object
 preservedGreet('Hello'); // Output: "Hello, John!"
+```
+
+**QUESTION #3**
+Consider the 2 following examples and distinguish the different output in each one with them with a reasoning.
+
+**Example 1:**
+
+```javascript
+function outer1() {
+  var x = 10;
+
+  var inner1 = function() {
+    console.log(x);
+  };
+
+  inner1();
+}
+
+outer1(); // Output: 10
+```
+
+**Reasoning for Example 1's Output:**
+ it logs the value of x from the outer scope, which is 10..
+
+**Example 2:**
+
+```javascript
+function outer2() {
+  var x = 10;
+
+  var inner2 = function() {
+    var x = 20;
+    console.log(x);
+  };
+
+  inner2();
+}
+
+outer2(); // Output: 20
+```
+
+**Reasoning for Example 2's Output:**
+  it logs the value of its own local x, which is 20.
