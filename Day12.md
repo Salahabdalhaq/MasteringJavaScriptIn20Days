@@ -81,3 +81,45 @@ function getName(studentRec: Student): string {
 ```
 
 Using static typing enhances code quality and helps prevent type-related bugs.
+
+**QUESTION #1:**
+
+
+**QUESTION #2:**
+What will be the output of the following code snippet? Pick the right choice then justify your answer with an explanation.
+
+```javascript
+function testScope1() {
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+
+testScope1();
+```
+
+**Choices:**
+
+A) undefined, undefined, undefined
+
+B) 1, undefined, ReferenceError
+
+C) 1, ReferenceError, ReferenceError
+
+D) 1, ReferenceError
+
+**Explanation:**
+
+The correct choice is D) 1, ReferenceError
+
+a is declared using var making it accessible within the whole testScope1 function
+b is declared using let making it accessible only within the if block.   result ReferenceError because b is not defined in that scope.
+ 
+```
+
+
