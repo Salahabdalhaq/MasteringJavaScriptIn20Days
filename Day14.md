@@ -78,3 +78,94 @@ var student = "salah";
 var teacher = "ahmad";
 ```
 
+
+**Question #1:**
+
+Given the following code snippet and explain what's happening.
+
+```javascript
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+      console.log("value of [i] is: ", i);
+    }, 100);
+}
+```
+
+
+**Solution:**
+The issue is that using 'var' in the loop makes the variable shared
+
+```javascript
+for (let i = 0; i < 5; i++) {
+    setTimeout(function() {
+      console.log("value of [i] is: ", i);
+    }, 100);
+}
+```
+
+
+**Question #2:**
+
+Given the following code snippet and explain what's happening.
+
+```javascript
+for (let i = 0; i < 5; i++) {
+   let array = [];
+   array.push(i);
+   console.log("Current array is: ", array);
+}
+```
+
+**Solution:**
+The code uses a loop to iterate from 0 to 4. In each iteration, a new array is created, and the current value of 'i' is added to it. The array is then printed to the console.
+```javascript
+ let array = [];
+for (let i = 0; i < 5; i++) {
+   array.push(i);
+}
+  console.log("Current array is: ", array);
+```
+
+
+**Question #3:**
+
+Given the following code snippet and explain what's happening.
+
+```javascript
+
+let functions = [];
+
+for (var i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+
+```
+The current output is:
+
+"Current value of i is: 5" "Current value of i is: 5" "Current value of i is: 5" "Current value of i is: 5" "Current value of i is: 5"
+
+The output should be:
+
+"Current value of i is: 0" "Current value of i is: 1" "Current value of i is: 2" "Current value of i is: 3" "Current value of i is: 4"
+
+
+**Solution:**
+The issue is that using 'var' in the loop makes the variable shared
+
+```javascript
+
+let functions = [];
+
+for (let i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+
+```
